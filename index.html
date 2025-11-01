@@ -1,0 +1,56 @@
+<!doctype html>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DMJR.BANK — Monetary Authority</title>
+<meta name="description" content="DMJR BANK — trust-based treasury, settlement, and internal currency (₲ Grace) for the Murray ecosystem.">
+<style>
+:root{--bg:#0a0d0c;--ink:#ecf1ef;--muted:#b7c6c1;--line:#1a221d;--max:1120px}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,Segoe UI,Roboto,Arial}
+a{color:#89e5cb;text-decoration:none} a:hover{text-decoration:underline}
+.wrap{max-width:var(--max);margin:auto;padding:28px 18px}
+.card{background:linear-gradient(180deg,rgba(16,21,19,.6),rgba(10,13,12,.6));border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.title{margin:.2em 0;font-size:clamp(28px,5vw,44px);font-weight:900}
+.subtitle{color:var(--muted);margin:0 0 14px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)} @media(max-width:900px){.grid{grid-template-columns:1fr}}
+.badge{display:inline-flex;gap:10px;align-items:center;padding:10px 12px;border:1px dashed #244f42;border-radius:12px;background:#0b1411;color:#89e5cb;font-weight:800}
+footer{border-top:1px solid #17201c;margin-top:20px}
+.foot{max-width:var(--max);margin:auto;padding:16px 18px;color:#b7c6c1;display:grid;gap:8px;text-align:center}
+</style>
+<header class="wrap">
+  <div class="badge" title="Treasury Route">
+    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3l6 3v6c0 5-6 8-6 8s-6-3-6-8V6l6-3z" fill="none" stroke="#23d3a6" stroke-width="2"/></svg>
+    DMJR.BANK — Monetary Authority (₲)
+  </div>
+</header>
+<main class="wrap">
+  <section class="card">
+    <h1 class="title">Monetary Authority of the Murray Empire</h1>
+    <p class="subtitle">Trust-based treasury, settlement, and internal currency (₲ Grace) for your infinite ecosystem.</p>
+    <ul>
+      <li>All inbound value touches the Treasury first.</li>
+      <li>₲ Grace credits labor, IP, surplus contracts, royalties.</li>
+      <li>Compliance-by-design via Trust &amp; PMA.</li>
+    </ul>
+  </section>
+  <section class="grid" style="margin-top:16px">
+    <div class="card">
+      <h3>₲ Grace</h3>
+      <p><b>Unit:</b> ₲ (Grace) &nbsp;|&nbsp; <b>Subunit:</b> mg (1 ₲ = 1000 mg)</p>
+      <p><b>Scope:</b> Internal across DMJR entities only.</p>
+    </div>
+    <div class="card">
+      <h3>Governance</h3>
+      <p>DVMJR Living Trust → DMJR BANK (Treasury) → WMU PMA (public benefit).</p>
+    </div>
+    <div class="card">
+      <h3>Treasury API</h3>
+      <p>Private ledger API backs issuance, transfer, and balance checks for subsidiaries.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="foot">
+    <div>© <span id="y"></span> DMJR BANK · General Delivery, Marietta, OH 45750-9999 · (513) 393-9217 · treasury@dmjr.bank</div>
+    <div>White Market Unlimited PMA • Murray Company Limited • Graceful AI • Donnie Dictionary • Phresh</div>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=(new Date).getFullYear()</script>
